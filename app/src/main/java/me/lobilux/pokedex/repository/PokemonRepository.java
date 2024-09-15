@@ -2,7 +2,7 @@ package me.lobilux.pokedex.repository;
 
 import me.lobilux.pokedex.data.api.PokemonApiClient;
 import me.lobilux.pokedex.data.api.PokemonApiService;
-import me.lobilux.pokedex.data.model.PokemonIndexCollection;
+import me.lobilux.pokedex.data.model.PokemonList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -14,8 +14,8 @@ public class PokemonRepository {
         apiService = PokemonApiClient.getClient().create(PokemonApiService.class);
     }
 
-    public void getPokemonIndexCollection(int limit, int offset, Callback<PokemonIndexCollection> callback) {
-        Call<PokemonIndexCollection> call = apiService.getPokemonIndexCollection(limit, offset);
+    public void getPokemonList(int limit, int offset, Callback<PokemonList> callback) {
+        Call<PokemonList> call = apiService.getPokemonList(limit, offset);
         call.enqueue(callback);
     }
 }

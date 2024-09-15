@@ -7,6 +7,7 @@ appcompat = "1.7.0"
 material = "1.12.0"
 retrofit = "2.11.0"
 converterGson = "2.11.0"
+lombok = "1.18.34"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,6 +17,7 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
