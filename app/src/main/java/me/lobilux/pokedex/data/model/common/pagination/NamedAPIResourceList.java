@@ -1,4 +1,4 @@
-package me.lobilux.pokedex.data.model.pagination;
+package me.lobilux.pokedex.data.model.common.pagination;
 
 import java.util.ArrayList;
 
